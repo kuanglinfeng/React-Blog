@@ -58,7 +58,6 @@ const MyList = () => {
            <Advert />
         </Col>
       </Row>
-
       <Footer />
     </div>
   )
