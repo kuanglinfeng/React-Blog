@@ -9,9 +9,7 @@ const Detailed = () => (
       <title>Home</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
-
     <Header />
-
     <Row className='comm-main' type='flex' justify='center'>
       <Col className='comm-left' xs={24} sm={24} md={16} lg={18} xl={14}>
         左侧
@@ -20,7 +18,6 @@ const Detailed = () => (
         右侧
       </Col>
     </Row>
-
   </div>
 )
 
