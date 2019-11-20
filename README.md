@@ -40,10 +40,44 @@
       ]
     }
    ```
-9. 在`pages/_app.js`里引入`antd`(自定义<App />)
+9. 在`pages/_app.js`里引入`antd`(这是在nextjs里使用antd的一个坑)
     ```js
     import App from 'next/app'
     import 'antd/dist/antd.css'
 
     export default App
     ```
+
+## `使用react-markdown`进行markdown解析
+
+1. 安装
+   `yarn add react-markdown`
+2. 导入
+   `import ReactMarkDown from 'react-markdown'`
+3. 使用
+   ```js
+    <div className="detailed-content" >
+      <ReactMarkdown 
+        source={markdown} 
+        escapeHtml={false}  
+      />
+    </div>
+   ```
+4. 使用`markdown-navbar`生成markdown文章目录结构
+   1. 安装
+      `yarn add markdown-navbar`
+   2. 引入
+      `import MarkDownNavBar from 'markdown-navbar'`
+      `import markdown-navbar/dist/navbar.css`
+   3. 使用
+      ```js
+        <div className="detailed-nav comm-box">
+        <div className="nav-title">文章目录</div>
+        <MarkNav
+          className="article-menu"
+          source={markdown}
+          ordered={false}
+        />
+      </div>
+      ```
+## 中台环境搭建
