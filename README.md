@@ -81,3 +81,25 @@
       </div>
       ```
 ## 中台环境搭建
+
+### 安装`egg.js`开发环境
+
+1. 安装脚手架工具`egg-init`
+   `npm install -g egg-init`
+2. 在`blog同级目录下`新建文件夹`service`
+3. 在`service`文件夹运行命令
+   `egg-init --type=simple`  
+4. 在`service`文件夹下安装依赖模板
+   `npm install` 
+5. 在`service`文件夹下运行服务
+   `yarn dev`
+
+**egg.js的主要目录结构和约定规范**
+
+app：主要工作目录
+config：服务端的配置文件
+logs：日志文件
+run：系统自动生成的运行时配置文件
+test：测试时用到的文件
+
+
