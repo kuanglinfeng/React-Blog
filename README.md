@@ -106,3 +106,8 @@ test：测试时用到的文件
 
 约定请求方式：get(获取)、post(增加)、put(修改)、delete(删除)
 
+### eggjs链接MySQL数据库
+
+1. 在service工程目录下引入`egg-mysql`
+   1. 安装`yarn add egg-mysql`
+   2. 对config目录下的plugin.js进行配置
