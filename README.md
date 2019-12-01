@@ -111,3 +111,10 @@ test：测试时用到的文件
 1. 在service工程目录下引入`egg-mysql`
    1. 安装`yarn add egg-mysql`
    2. 对config目录下的plugin.js进行配置
+2. 数据库及其相关表的设定
+   1. 创建数据库`react_blog`
+   2. 在react_blog下创建表blog_type
+      1. 在blog_type下穿创建name和orderNum（用于排序展示）两个字段
+   3. 在react_blog下创建表blog_article
+      1. 在blog_article下创建type_id,title,article_content,introduce,add_time,view_count等字段
+      2. 可以先mock几个数据进行测试
